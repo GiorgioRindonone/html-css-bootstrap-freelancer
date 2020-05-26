@@ -5,31 +5,184 @@
   box-sizing: border-box;
 }
 
+/* utility */
 
-.row {
+.textcenter {
+  text-align: center;
+}
+
+/* img {
+  height:250px;
+} */
+
+body {
+  padding-top: 90px;
+}
+
+section {
+  padding-bottom:  30px ;
+}
+/* Formattazione Testo */
+
+.primarytext {
+  text-transform: uppercase;
+  font-size: 63px;
+}
+
+.secondtext {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.thirdtext {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bottone {
+
+padding: 10px 15px;
+}
+
+.bottone .fas{
+  margin-right: 5px;
+}
+
+/* WARNING: debug */
+
+/* .row {
   background-color: pink;
 }
 
 section, footer, header {
   background-color: violet;
-}
+} */
 
 [class*="col-"] {
   /* border: 1px solid; */
   /* height: 200px; */
 }
 
-.textcenter {
+/* WARNING:  */
+
+/* Header */
+
+.navbar.ms_navbar {
+  background-color: #2c3e50;
+  padding: 20px 0;
+}
+
+.navbar-default.ms_navbar .navbar-nav li a {
+  font-size: 16px;
+}
+
+.navbar-default.ms_navbar .navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.navbar-default.ms_navbar .navbar-brand, .navbar-default.ms_navbar .navbar-nav li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav li a:hover  {
+    color: rgb(24, 188, 156);
+}
+
+.top-img {
+  height: 250px;
+}
+
+.sezjumbo{
+  background-color: rgb(24, 188, 156);
+  color: rgb(255, 255, 255);
+  padding: 30px 0;
+}
+
+
+
+.schede {
+  padding: 20px;
   text-align: center;
 }
 
-.schede  {
-  background-color: #dc3545;
+
+.schede img {
+  /* background-color: #dc3545; */
   text-align: center;
-  margin-bottom: 20px;
-  padding:  20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-size: cover;
 }
 
-img {
-  height: 150px;
+
+.contatti .form-group > input , .contatti .form-group textarea{
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid;
+}
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.footer_bot{
+  background-color: #1a252f;
+  padding: 20px 0;
+}
+.footer_col {
+  padding: 10px;
+}
+
+footer .fab {
+  margin: 0 5px;
+  width: 50px;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+@media screen and  (min-width: 1200px) {
+  .schede-image {
+    height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+  .schede-image {
+    height: 200px;
+  }
+}
+
+
+@media (max-width 767px) {
+  .primarytext {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+
+  .secondtext {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  .thirdtext {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .schede-image {
+    height: 250px;
 }
